@@ -1,0 +1,37 @@
+{
+    "name": "madeitbelgium/business-control-php-sdk",
+    "description": "PHP (Laravel) SDK for businessControl.be.",
+    "keywords": ["business control", "invoices", "live chat", "livechat", "payments"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tjebbe Lievens",
+            "email": "tjebbe.lievens@madeit.be"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "guzzlehttp/guzzle": "6.3.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.0",
+        "phpunit/phpunit": "~7.0",
+        "php-coveralls/php-coveralls": "~2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MadeITBelgium\\BusinessControl\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MadeITBelgium\\BusinessControl\\ServiceProvider\\BusinessControl"
+            ],
+            "facades": [
+                "MadeITBelgium\\BusinessControl\\Facade\\BusinessControl"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
