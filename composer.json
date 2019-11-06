@@ -1,5 +1,6 @@
 {
-    "name": "madeitbelgium/business-control-php-sdk",
+    "name": "madeitbelgium/business-control",
+    "version": "0.1.0",
     "description": "PHP (Laravel) SDK for businessControl.be.",
     "keywords": ["business control", "invoices", "live chat", "livechat", "payments"],
     "license": "MIT",
